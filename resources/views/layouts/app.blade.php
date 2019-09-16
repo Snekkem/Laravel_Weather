@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/registration.css">  
     <link rel="stylesheet" href="styles/feedback.css">  
+    <link rel="stylesheet" href="styles/home.css"> 
     <style>
         #app {
             text-align: right;

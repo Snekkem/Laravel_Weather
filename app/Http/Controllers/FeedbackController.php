@@ -25,6 +25,6 @@ class FeedbackController extends Controller
         $feed->message = $request['message'];
         $feed->save();
 
-        return redirect('/feedback');
+        return redirect('/success-feedback');
     }
 }

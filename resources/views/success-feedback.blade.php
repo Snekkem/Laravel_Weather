@@ -1,6 +1,8 @@
 @extends('layouts.app')
 <style>
     .success-feedback {
+        text-align: center;
+        margin-top: 10%;
         font-size: 24px;
         font-weight: 600;
         color:grey;

@@ -23,6 +23,6 @@ Route::get('/feedback', 'FeedbackController@leaveFeedback');
 
 Route::post('/insertData', 'FeedbackController@insertData');
 
-//Route::post('/success-feedback', 'SuccessFeedbackController@printThanks');
+Route::get('/success-feedback', 'SuccessFeedbackController@printThanks');
 
 Route::get('/review', 'ReviewController@printReviews');

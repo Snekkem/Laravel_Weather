@@ -6,7 +6,8 @@
         <div class="col-md-8">
             <div class="card">
 
-                <div class="card-body">{{ __('Register') }}
+                <div class="card-body">
+                    <div class="register-form">{{ __('Register') }}
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -115,6 +116,7 @@
                             </div>
                         </div>
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
