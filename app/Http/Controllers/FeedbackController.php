@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests\ReviewRequest;
 use Illuminate\Http\Request;
 use App\Review;
 
@@ -14,15 +14,17 @@ class FeedbackController extends Controller
     }
 
     public function leaveFeedback() {
-        return view('feedback');
+        return view('/feedback');
     }
 
-    public function insertData() {
+    public function insertData(ReviewRequest $request) {
 
-        $feed = Review::create(array(
-            'name'  => 'Laravel - замечателен!',
-            'email' => 'Джейсон',
-            'message'   => 'Laravel очень удобен - используйте его, если вы ещё этого не делаете!'
-          ));
+        $feed = new Review;
+        $feed->name = $request['name'];
+        $feed->email = $request['email'];
+        $feed->message = $request['message'];
+        $feed->save();
+
+        return redirect('/feedback');
     }
 }

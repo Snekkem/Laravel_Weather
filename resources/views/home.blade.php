@@ -13,14 +13,13 @@
     table {
         text-align: center;
         border-radius: 12px;
-
     }
 
     td {
         padding: 7px;
         color:ivory;
         font-weight: 600;
-        
+        background: rgba(194, 130, 194, 1);
   
         font-size: 20px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

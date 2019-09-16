@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFeedbaksTable extends Migration
+class CreateReviewTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateFeedbaksTable extends Migration
      */
     public function up()
     {
-        Schema::create('feedbaks', function (Blueprint $table) {
+        Schema::create('reviews', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
@@ -29,6 +29,6 @@ class CreateFeedbaksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('feedbaks');
+        Schema::dropIfExists('review');
     }
 }

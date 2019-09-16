@@ -29,8 +29,9 @@
             display: inline;
             margin-right: 2%;
         }
-        #navigation-link:link {      
+        #navigation-link {      
         font-size: 20px;
+        color:blueviolet;
         margin-left: 20px;
         margin-right: 20px;
         font-weight: 600;

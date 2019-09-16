@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class ReviewController extends Controller
 {
     public function printReviews() {
-        return view('review');
+
+        $task = \App\Review::SimplePaginate(10);
+        return view('review', compact('task'));
     }
 }

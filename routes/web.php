@@ -21,8 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/feedback', 'FeedbackController@leaveFeedback');
 
-Route::post('/insert-data', 'FeedbackController@insertData');
+Route::post('/insertData', 'FeedbackController@insertData');
 
-Route::post('/success-feedback', 'SuccessFeedbackController@printThanks');
+//Route::post('/success-feedback', 'SuccessFeedbackController@printThanks');
 
 Route::get('/review', 'ReviewController@printReviews');
