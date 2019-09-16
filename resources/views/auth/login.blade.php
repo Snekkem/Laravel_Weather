@@ -52,11 +52,11 @@
                                     {{ __('Login') }}
                                 </button>
 
-                               @if (Route::has('password.request'))
+                              <!--  @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}"><br>
                                         {{ __('Forgot Password?') }}
                                     </a>
-                                @endif
+                                @endif-->
                             </div>
                         </div>
                     </form>
